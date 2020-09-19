@@ -1,5 +1,5 @@
 {
-  "name": "hypermd",
+  "name": "maobi",
   "version": "0.3.11",
   "description": "A full-featured Markdown editor, breaks the wall between writing and preview.",
   "main": "./everything.js",
@@ -22,8 +22,8 @@
     "codemirror",
     "wysiwyg"
   ],
-  "homepage": "https://laobubu.net/HyperMD/",
-  "author": "laobubu <laobubu@gmail.com> (http://laobubu.net)",
+  "homepage": "",
+  "author": "GGICE、laobubu <laobubu@gmail.com> (http://laobubu.net)",
   "license": "MIT",
   "devDependencies": {
     "@types/codemirror": "^0.0.56",

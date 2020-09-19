@@ -288,7 +288,7 @@ export class TokenSeeker {
     const sameLine = line === this.line;
     var i_token = 0
 
-    if (precise || !sameLine) {
+    if (line && (precise || !sameLine)) {
       this.line = line
       this.lineNo = line.lineNo()
       this.lineTokens = this.cm.getLineTokens(this.lineNo)
@@ -296,7 +296,7 @@ export class TokenSeeker {
       // try to speed-up seeking
       i_token = this.i_token
       let token = this.lineTokens[i_token]
-      if (token.start > ch) i_token = 0
+      if (token && token.start > ch) i_token = 0
     }
 
     var tokens = this.lineTokens
